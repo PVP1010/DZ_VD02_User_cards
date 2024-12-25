@@ -1,0 +1,64 @@
+
+        .card-container {
+            display: flex;
+            gap: 30px;
+        }
+
+
+.card{
+   width: 350px;
+   height: 550px;
+   background-color: burlywood;
+   border-radius: 20px;
+   transition: 1s;
+}
+
+.photo {
+   height: 8%;
+   padding: 20px;
+   # padding - это внутренний отступ
+   # Для внешних отступов используется margin
+}
+.card-content {
+
+    position: relative;
+    top: 4%;
+    left: 18%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; /* Отступ сверху */
+    border-radius: 20px;
+    max-width: 100%; /* Чтобы изображение не выходило за пределы контейнера */
+    height: auto;   /* Сохраняет пропорции изображения */
+}
+
+h1 {
+    position: relative;
+    left:15%;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: olivedrab;
+}
+
+a:active {
+    color: royalblue;
+}
+
+.card {
+    /* добавляем свойство для плавности */
+    transition: background-color 1s, width 1s, height 1s;
+}
+
+.card:hover {
+    background-color: #0080ff;
+    width: 400px;
+    height: 600px;
+}
